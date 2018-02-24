@@ -20,14 +20,18 @@
     
     </div>
    
-  <div class=" col-xs-6">  
+  <div class=" col-xs-6">
+      
+      
+      <%= render '/components/post_form' %>
+      <% for @p in @posts %>  
     <div class="panel panel-default">
        <div class="panel-body">
-           <p>tweets</p>
+           <p><%= @p.content %> </p>
      </div>
      
           </div>
-        
+       <% end %> 
 </div>
   
 <div class=" col-xs-3">
@@ -37,13 +41,6 @@
   </div>
   
     </div>
-        
-
- </div>
-    
-</div>
-<div class="row">
-<div class=" col-xs-3 col-xs-offset-9">
     <div class="panel panel-default">
   <div class="panel-body">
     <p> Trends</p>
@@ -53,6 +50,7 @@
         
 
  </div>
+    
 </div>
 
 
