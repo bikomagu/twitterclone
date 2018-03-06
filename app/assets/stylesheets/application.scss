@@ -15,3 +15,38 @@
  @import "bootstrap-sprockets";
 @import "bootstrap";
 /**= require bootstrap/dist/css/bootstrap*/
+body{
+    background-color: rgba(212,216,212,0.25);
+}
+
+.navbar{
+    background-color: white;
+}
+
+.navbar-brand{
+    position: absolute;
+    left: 50%;
+}
+.post-panel{
+    margin-top: -31px;
+    
+}
+.post-content{
+    text-align: left;
+    margin-left:12px;
+    
+}
+.g-links{
+    opacity:0.7;
+    fontsize:120%;
+    margin-right:75px;
+}
+
+.post-links{
+    text-align:left;
+}
+
+.home-image{
+    margin-bottom:30px;
+}
+

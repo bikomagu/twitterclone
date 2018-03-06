@@ -5,7 +5,8 @@ class PagesController < ApplicationController
   end
 
   def home
-     @posts= Post.all
+     @posts= Post.all.page(params[:page]).per(5)
+     @newpost=Post.new
   end
 
   def profile
