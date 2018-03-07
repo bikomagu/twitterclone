@@ -6,8 +6,10 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+gem 'sqlite3', groups: %w(test development), require: false
+gem 'pg', groups: %w(production), require: false
 # devise gem for authentication
-gem 'sqlite3'
 gem 'devise', github: 'plataformatec/devise'
 #jquerry
 gem 'rails-ujs'
